@@ -1,0 +1,44 @@
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('./image/background\ image4.webp') no-repeat center center/cover;
+        }
+
+        .text-container {
+            position: relative;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .text-container h1 {
+            font-size: 4rem;
+            margin: 0;
+            opacity: 0;
+            animation: slideIn 2s ease-out forwards;
+        }
+
+        .text-container h1:nth-child(1) {
+            animation-delay: 0.5s;
+        }
+
+        .text-container h1:nth-child(2) {
+            animation-delay: 1.5s;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+   
